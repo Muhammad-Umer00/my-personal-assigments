@@ -8,8 +8,8 @@ void main() {
   double balance = 4000;
   print("Umer ATM");
 
-  bool exit = true;
-  while (exit == true) {
+  int exit = 0;
+  while (exit == 0 || exit == 1 || exit == 2 || exit == 3) {
     print(withDraw);
     print(showBAlance);
     print(Deposite);
@@ -46,8 +46,11 @@ void main() {
           }
           break;
         case 4:
-          exit = false;
-          print("visit again maalik");
+          exit = exit + 1;
+          print("Exit attemt $exit");
+          if (exit == 4) {
+            print("bhaa dubara zaroor visit karna");
+          }
         default:
           print("please choose correct option");
       }
