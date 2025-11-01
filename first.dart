@@ -16,7 +16,7 @@ void main() {
     print(Exit);
     String? input = stdin.readLineSync();
     int option = int.parse(input!);
-    if (option <= 4) {
+    if (option <= 4 && option > 0) {
       switch (option) {
         case 1:
           print("How much do you want to withdraw");
